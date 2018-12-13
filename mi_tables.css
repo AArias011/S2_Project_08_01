@@ -14,11 +14,63 @@
 */
 
 /* Table Styles */
+/* This code gives the table element to have a linear gradient background and a 5px, solid gray border. */
+table {
+    background: linear-gradient(to bottom, rgb(190, 215, 255), black);
+    border: 5px solid gray;
+}
 
+/* This code gives all table headers and table cells to have a border of 3 pixels, solid and grey. Also a kine height and padding. */
+th,
+td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+/* This sets all of the table headers to have a certain background color, font color and font weight. */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+/* This code sets all of the table cells to have a font color of white, a font size of 0.9em and a vertical align. */
+td {
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+}
 
 
 /* Column Styles */
+/* This code sets the col with an id of firstCol to have a certain width of 24%. */
+col#firstCol {
+    -moz-column-width: 24%;
+    -webkit-column-width: 24%;
+    width: 24%;
+}
 
-
+/* This code sets the col with a class of dataCols to have a width of 19%. */
+col.dataCols {
+    -moz-column-width: 19%;
+    -webkit-column-width: 19%;
+    width: 19%;
+}
 
 /* Table Header Styles */
+/* This sets the data cell to have a height of 60px. */
+thead td {
+    height: 60px;
+}
+
+/* This sets the first table row and first table header to have a font size of 2em. */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+
+/* This sets the first table row and not the table header to have a certain background color of transparent and font color of black. */
+thead tr:first-of-type th:not(:first-of-type) {
+    background-color: transparent;
+    color: black;
+}
